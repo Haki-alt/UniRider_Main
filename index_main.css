@@ -1,0 +1,245 @@
+/* ---------------- GLOBAL STYLES ---------------- */
+:root {
+    --accent: #0d6efd;
+    --muted: #6b7280;
+    --bg: #fbfdff;
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg);
+    color: #111827;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 700;
+    margin-bottom: .5rem
+}
+
+p {
+    color: #374151;
+    line-height: 1.7
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none
+}
+
+a:hover {
+    opacity: .9
+}
+
+/* ---------------- NAVBAR ---------------- */
+.navbar {
+    padding: 1rem 2rem;
+    background: linear-gradient(90deg, #050505, #111827);
+    box-shadow: 0 8px 30px rgba(2, 6, 23, .4)
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: .75rem
+}
+
+#nav_logo {
+    height: 64px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform .25s
+}
+
+#nav_logo:hover {
+    transform: scale(1.05)
+}
+
+.nav-link {
+    color: #f8fafc !important;
+    font-weight: 500;
+    margin: 0 6px
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--accent) !important
+}
+
+.btn-outline-light {
+    border-color: transparent;
+    color: #e6eefc
+}
+
+.btn-outline-light:hover {
+    background: var(--accent);
+    color: #fff
+}
+
+/* ---------------- HERO SECTION ---------------- */
+.hero-section {
+    background: linear-gradient(180deg, rgba(2, 6, 23, 0.45), rgba(2, 6, 23, 0.6)), url("UniRider_main_logo.jpg") center/cover no-repeat;
+    height: min(70vh, 680px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    color: #fff;
+    padding: 0 1rem;
+}
+
+#hero-message-text {
+    font-size: clamp(18px, 2.2vw, 28px);
+    font-weight: 900;
+    color: white;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 16px 28px;
+    border-radius: 12px;
+    backdrop-filter: blur(3px);
+    margin-bottom: 36px
+}
+
+.hero-cta {
+    display: inline-block;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    padding: 12px 22px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, var(--accent), #0069d9);
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    box-shadow: 0 8px 18px rgba(13, 110, 253, .16);
+    transition: transform .18s ease;
+}
+
+.hero-cta:hover {
+    transform: translateY(-3px)
+}
+
+/* ---------------- HOW IT WORKS ---------------- */
+.how-it-works-section {
+    background: #f8fafc;
+    padding: 80px 0
+}
+
+.how-it-works-section h2 {
+    font-size: 2.2rem;
+    color: #0f172a;
+    margin-bottom: 16px
+}
+
+.how-it-works-section .lead {
+    color: var(--muted);
+    max-width: 820px;
+    margin: 0 auto 40px
+}
+
+.how-step {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(2, 6, 23, .06);
+    padding: 28px;
+    transition: transform .35s, box-shadow .35s
+}
+
+.how-step:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(2, 6, 23, .09)
+}
+
+/* ---------------- ABOUT/CONTACT ---------------- */
+.About {
+    background: linear-gradient(90deg, #f6fbff, #ffffff);
+    padding: 80px 0
+}
+
+.About h2 {
+    color: var(--accent);
+    font-size: 2.2rem
+}
+
+.About p {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    color: #475569
+}
+
+.contact {
+    background: #f9fbfd;
+    padding: 80px 0
+}
+
+.contact .card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(2, 6, 23, .06)
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, var(--accent), #0069d9);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: 600
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px)
+}
+
+footer {
+    background: linear-gradient(90deg, #050505, #111827);
+    color: #d1d5db;
+    padding: 36px 0
+}
+
+footer .nav-link {
+    color: #d1d5db !important
+}
+
+footer small {
+    color: #9ca3af
+}
+
+.subscription-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(2, 6, 23, .04);
+    padding: 26px;
+    text-align: center
+}
+
+/* small utilities */
+.container .lead {
+    max-width: 900px
+}
+
+@media (max-width:768px) {
+    .navbar {
+        padding: .75rem 1rem
+    }
+
+    #nav_logo {
+        height: 54px
+    }
+
+    .hero-section {
+        align-items: center;
+        padding: 2.5rem 1rem
+    }
+
+    #hero-message-text {
+        margin-bottom: 18px
+    }
+}

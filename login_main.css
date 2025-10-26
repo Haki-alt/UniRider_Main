@@ -1,0 +1,146 @@
+:root {
+  --accent: #0d6efd;
+  --bg: #0f1723
+}
+
+* {
+  box-sizing: border-box
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #f3f6fb, #e8eefc);
+  font-family: 'Poppins', sans-serif
+}
+
+.form-container {
+  width: 380px;
+  border-radius: 14px;
+  background: #0b1220;
+  color: #eef2ff;
+  padding: 2.25rem;
+  box-shadow: 0 20px 50px rgba(2, 6, 23, .12)
+}
+
+.title {
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-weight: 700;
+  margin-bottom: .5rem
+}
+
+.input-group {
+  margin-top: .5rem
+}
+
+.input-group input {
+  width: 100%;
+  border-radius: .5rem;
+  border: 1px solid rgba(255, 255, 255, .06);
+  background: rgba(255, 255, 255, .02);
+  padding: .75rem 1rem;
+  color: #e6eefc
+}
+
+.input-group label {
+  display: block;
+  color: #cbd5e1;
+  margin-bottom: 6px
+}
+
+.input-group input:focus {
+  outline: none;
+  box-shadow: 0 6px 18px rgba(13, 110, 253, .12);
+  border-color: var(--accent)
+}
+
+.forgot {
+  display: flex;
+  justify-content: flex-end;
+  font-size: .8rem;
+  color: #9ca3af;
+  margin: 8px 0 14px
+}
+
+.forgot a,
+.signup a {
+  color: #e6eefc;
+  text-decoration: none
+}
+
+.sign {
+  display: block;
+  width: 100%;
+  background: linear-gradient(90deg, var(--accent), #0069d9);
+  padding: .85rem;
+  border-radius: .5rem;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  margin-top: 1rem;
+  box-shadow: 0 8px 20px rgba(13, 110, 253, .14)
+}
+
+.social-message {
+  display: flex;
+  align-items: center;
+  padding-top: 1rem
+}
+
+.line {
+  height: 1px;
+  flex: 1;
+  background: rgba(255, 255, 255, .06)
+}
+
+.social-message .message {
+  padding: 0 .75rem;
+  font-size: .9rem;
+  color: #94a3b8
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: .75rem
+}
+
+.social-icons .icon {
+  border-radius: .375rem;
+  padding: .65rem;
+  background: transparent;
+  margin-left: 8px
+}
+
+.social-icons .icon svg {
+  height: 1.2rem;
+  width: 1.2rem;
+  fill: #fff
+}
+
+.signup {
+  text-align: center;
+  font-size: .85rem;
+  line-height: 1rem;
+  color: #94a3b8;
+  margin-top: 1rem
+}
+
+.form-container .sign:hover {
+  transform: translateY(-3px)
+}
+
+@media(max-width:420px) {
+  .form-container {
+    width: 92vw;
+    padding: 1.25rem
+  }
+
+  .title {
+    font-size: 1.3rem
+  }
+}

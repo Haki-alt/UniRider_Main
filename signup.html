@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | UniRider</title>
+    <link rel="stylesheet" href="login_main.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <p class="title">Create Account</p>
+        <!-- Signup Form -->
+        <form id="signupForm" onsubmit="signup(event)">
+            <div class="input-group">
+                <input type="text" id="signupUsername" placeholder="Username" required>
+            </div>
+            <div class="input-group">
+                <input type="email" id="signupEmail" placeholder="Email" required>
+            </div>
+            <div class="input-group">
+                <input type="password" id="signupPassword" placeholder="Password" required>
+            </div>
+            <button type="submit" class="sign">Sign Up</button>
+        </form>
+
+        <!-- Login Form -->
+        <form id="loginForm" onsubmit="login(event)">
+            <div class="input-group">
+                <input type="text" id="loginUsername" placeholder="Username" required>
+            </div>
+            <div class="input-group">
+                <input type="password" id="loginPassword" placeholder="Password" required>
+            </div>
+            <button type="submit" class="sign">Login</button>
+        </form>
+
+        <!-- Logout Button (in dashboard) -->
+        <button onclick="logout()">Logout</button>
+        <p class="signup">
+            Already have an account?
+            <a href="login_main.html">Sign in</a>
+        </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
